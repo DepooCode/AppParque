@@ -2,29 +2,17 @@ package parque;
 
 import java.util.TreeMap;
 
-class Cafeteria extends Servicio {
+public class Cafeteria extends ServicioGeneral {
+
     private boolean tieneCocinero;
     private TreeMap<Integer, String> comidaFacturadaVendida;
+    private boolean tieneCajero;
 
     public Cafeteria(String nombre, String tipo) {
         super(nombre, tipo);
-        comidaFacturadaVendida = new TreeMap<>();
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public boolean isTieneCajero() {
-        return tieneCajero;
-    }
-
-    public void setTieneCajero(boolean tieneCajero) {
-        this.tieneCajero = tieneCajero;
+        this.tieneCocinero = false;
+        this.tieneCajero = false;
+        this.comidaFacturadaVendida = new TreeMap<>();
     }
 
     public boolean isTieneCocinero() {
@@ -35,11 +23,24 @@ class Cafeteria extends Servicio {
         this.tieneCocinero = tieneCocinero;
     }
 
-    public void venderFacturarComida(String comida, int precio) {
-        comidaFacturadaVendida.put(precio, comida);
+    public boolean isTieneCajero() {
+        return tieneCajero;
+    }
+
+    public void setTieneCajero(boolean tieneCajero) {
+        this.tieneCajero = tieneCajero;
     }
 
     public TreeMap<Integer, String> getComidaFacturadaVendida() {
         return comidaFacturadaVendida;
+    }
+
+    public void venderFacturarComida(String comida, int precio) {
+        if (comida != null && !comida.isEmpty() && precio > 0) {
+            comidaFacturadaVendida.put(precio, comida);
+            System.out.println("Comida vendida y facturada: " + comida + " | Precio: " + precio);
+        } else {
+            System.out.println("Error al facturar: datos inválidos.");
+        }
     }
 }

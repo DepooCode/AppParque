@@ -2,12 +2,15 @@ package parque;
 
 import java.util.List;
 
-class Cultural extends Atraccion {
+public class Cultural extends Atraccion {
+
     private int minEdad;
 
-    public Cultural(String nombre, String exclusividad, String ubicacion, int cupoMaximo, 
-                    int numeroEncargadosMin, boolean deTemporada, List<String> restriccionesClima, int minEdad) {
-        super(nombre, exclusividad, ubicacion, cupoMaximo, numeroEncargadosMin, deTemporada, restriccionesClima);
+    public Cultural(String nombre, String exclusividad, String ubicacion, int cupoMaximo,
+                    int numEncargadosMin, List<String> restriccionesClima,
+                    boolean enTemporada, int minEdad) {
+
+        super(nombre, exclusividad, ubicacion, cupoMaximo, numEncargadosMin, restriccionesClima, enTemporada);
         this.minEdad = minEdad;
     }
 
@@ -17,10 +20,5 @@ class Cultural extends Atraccion {
 
     public void setMinEdad(int minEdad) {
         this.minEdad = minEdad;
-    }
-
-    @Override
-    public boolean revisarRegistrarTiquete(Tiquete tiquete) {
-        return true;
     }
 }

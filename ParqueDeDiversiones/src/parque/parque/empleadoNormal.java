@@ -1,27 +1,29 @@
 package parque;
 
-import java.util.List;
+public class EmpleadoNormal extends Empleado {
 
-class EmpleadoNormal extends Empleado {
-    private List<String> listaCapacidades;
+    private String tipo;
+    private int experiencia;
 
-    public EmpleadoNormal(String id, String nombre, List<String> capacidades) {
-        super(id, nombre);  
-        this.listaCapacidades = capacidades;
+    public EmpleadoNormal(String id, String nombre, String tipo, int experiencia) {
+        super(id, nombre);
+        this.tipo = tipo;
+        this.experiencia = experiencia;
     }
 
-    public List<String> getListaCapacidades() {
-        return listaCapacidades;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setListaCapacidades(List<String> capacidades) {
-        this.listaCapacidades = capacidades;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
-    public List<Turno> getTurnosAsignados() {
-        return null; 
+    public int getExperiencia() {
+        return experiencia;
     }
 
-    public void comprarTiquete(Tiquete tiquete) {
+    public void setExperiencia(int experiencia) {
+        this.experiencia = experiencia;
     }
 }
