@@ -2,7 +2,7 @@ package parque;
 
 import java.util.Date;
 
-class TiqueteEntradaIndividual extends Tiquete {
+public class TiqueteEntradaIndividual extends Tiquete {
     private Atraccion atraccionAsociada;
 
     public TiqueteEntradaIndividual(String id, CategoriaTiquete categoria, boolean fastPass, Date fechaFastPass, Atraccion atraccion) {

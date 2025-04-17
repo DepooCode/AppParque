@@ -2,7 +2,7 @@ package parque;
 
 import java.util.List;
 
-abstract class Atraccion {
+public abstract class Atraccion {
     private String exclusividad;
     private String ubicacion;
     private int cupoMaximo;

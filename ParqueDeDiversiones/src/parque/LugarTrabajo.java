@@ -1,6 +1,6 @@
 package parque;
 
-abstract class LugarTrabajo {
+public abstract class LugarTrabajo {
     protected String nombre;
 
     public LugarTrabajo(String nombre) {

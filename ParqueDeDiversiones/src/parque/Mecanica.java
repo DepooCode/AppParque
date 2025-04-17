@@ -1,7 +1,7 @@
 package parque;
 import java.util.List;
 
-class Mecanica extends Atraccion {
+public class Mecanica extends Atraccion {
     private float minAltura;
     private float maxAltura;
     private float minPeso;

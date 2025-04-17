@@ -1,6 +1,6 @@
 package parque;
 
-class ServicioGeneral extends LugarTrabajo {
+public class ServicioGeneral extends LugarTrabajo {
     private static final String NOMBRE = "ServicioGeneral";
 
     public ServicioGeneral(String nombre) {

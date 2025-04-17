@@ -3,7 +3,7 @@ package parque;
 import java.util.ArrayList;
 import java.util.List;
  
-class Gerente extends Empleado {
+public class Gerente extends Empleado {
     public List<EmpleadoNormal> listaEmpleadosGest;
     public List<Atraccion> listaAtraccionesGest;
     public List<Espectaculo> listaEspectaculosGest;

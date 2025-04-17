@@ -2,7 +2,7 @@ package parque;
 
 import java.util.TreeMap;
 
-class Taquilla extends Servicio {
+public class Taquilla extends Servicio {
     private TreeMap<Integer, String> mapaTiquetes;
 
     public Taquilla(String nombre, String tipo) {

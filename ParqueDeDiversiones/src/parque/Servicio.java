@@ -1,6 +1,6 @@
 package parque;
 
-abstract class Servicio extends LugarTrabajo {
+public abstract class Servicio extends LugarTrabajo {
     protected String tipo;
     protected boolean tieneCajero;
 

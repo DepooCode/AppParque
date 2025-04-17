@@ -2,7 +2,7 @@ package parque;
 
 import java.util.Date;
 
-abstract class Tiquete {
+public abstract class Tiquete {
     protected String id;
     protected CategoriaTiquete categoria;
     protected boolean utilizado;

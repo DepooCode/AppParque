@@ -2,7 +2,7 @@ package parque;
 
 import java.util.TreeMap;
 
-class Tienda {
+public class Tienda {
     private String nombre;
     private String tipo;
     private boolean tieneCajero;

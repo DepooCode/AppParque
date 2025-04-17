@@ -3,7 +3,7 @@ package parque;
 import java.util.ArrayList;
 import java.util.List;
 
-class Parque {
+public class Parque {
     private List<Empleado> listaEmpleados;
     private List<Atraccion> listaAtracciones;
     private List<Espectaculo> listaEspectaculos;

@@ -4,7 +4,7 @@ import java.sql.Time;
 import java.util.Date;
 import java.util.List;
 
-class Espectaculo {
+public class Espectaculo {
     private String nombre;
     private Time horario;
     private Date fecha;

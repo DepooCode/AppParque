@@ -4,7 +4,7 @@ import java.util.Date;
 
 
 
-class Turno {
+public class Turno {
     private Date fecha;
     private String tipoTurno;
     private LugarTrabajo lugarAsignado;

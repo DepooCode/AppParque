@@ -1,6 +1,6 @@
 package parque;
 
-class Empleado {
+public class Empleado {
     private String id;
     private String nombre;
     private String usuario;
