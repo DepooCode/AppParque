@@ -2,7 +2,7 @@ package parque;
 
 import java.util.TreeMap;
 
-public class Cafeteria extends ServicioGeneral {
+public class Cafeteria extends Servicio {
 
     private boolean tieneCocinero;
     private TreeMap<Integer, String> comidaFacturadaVendida;

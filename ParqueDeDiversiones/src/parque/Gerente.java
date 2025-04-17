@@ -1,11 +1,18 @@
 package parque;
 
+import java.util.ArrayList;
 import java.util.List;
  
 class Gerente extends Empleado {
-    public List<EmpleadoNormal> getListaEspectaculosGest:
+    public List<EmpleadoNormal> listaEmpleadosGest;
+    public List<Atraccion> listaAtraccionesGest;
+    public List<Espectaculo> listaEspectaculosGest;
     public Gerente(String id, String nombre) {
         super(id, nombre);
+        this.listaEmpleadosGest = new ArrayList<>();
+        this.listaAtraccionesGest = new ArrayList<>();
+        this.listaEspectaculosGest = new ArrayList<>();
+
     }
 
     public void asignarTurno(EmpleadoNormal empleado, Turno turno) {
@@ -41,7 +48,7 @@ class Gerente extends Empleado {
             }
         }
         
-    }
+    
 
     public void eliminarEmpleado(EmpleadoNormal empleado) {
         if (!getListaEmpleadosGest().contains(empleado)) {

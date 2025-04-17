@@ -38,8 +38,10 @@ abstract class Tiquete {
         return utilizado;
     }
 
-    public void userTiquete() {
+    public void usarTiquete() {
         this.utilizado = true;
     }
+
+   
 }
 

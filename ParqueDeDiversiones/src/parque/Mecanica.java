@@ -72,6 +72,10 @@ class Mecanica extends Atraccion {
 
     @Override
     public boolean revisarRegistrarTiquete(Tiquete tiquete) {
-        return true;
+        if (this.getExclusividad().equals(tiquete.getCategoria())) {
+            return true;
+        }
+        
+        return false; 
     }
 }
